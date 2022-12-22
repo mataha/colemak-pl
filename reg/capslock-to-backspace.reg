@@ -2,6 +2,14 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
 "Scancode Map"=hex:00,00,00,00,00,00,00,00,02,00,00,00,0e,00,3a,00,00,00,00,00
+;                 | Version   | Flags     | Mapping # | Mapping 1 | Nullmap   |
+;                 +-----------+-----------+-----------+-----------+-----------+
+;                 | 8 zeroes  | 8 zeroes  | 1 mapping | map 000E  | 8 zeroes  |
+;                 |           |           | + nullmap | (Backspace)`----------+
+;                 |           |           | = 0x02 LE | to 003A (CapsLock) LE |
+;                 +-----------+-----------+-----------+-----------------------+
+;
+; Reference: https://learn.microsoft.com/en-us/windows-hardware/drivers/hid/keyboard-and-mouse-class-drivers
 
 [HKEY_CURRENT_USER\Keyboard Layout]
 "Scancode Map"=-
