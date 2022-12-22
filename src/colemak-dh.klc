@@ -1,4 +1,4 @@
-KBD pl-cmdh     "Polski (Colemak-DH - z Caps Lockiem)"
+KBD cmdh-pl     "Colemak-DH (PL)"
 COPYRIGHT       "Creative Commons Zero v1.0 Universal"
 COMPANY         "mataha <mataha@users.noreply.github.com>"
 LOCALENAME      "pl-PL"
@@ -177,10 +177,14 @@ DEADKEY 007e
 
 DESCRIPTIONS
 
-0409    Polski (Colemak - z Caps Lockiem)
+0409    Polish (Colemak-DH)
+0415    Polski (Colemak-DH)
+0809    Polish (Colemak-DH)
 
 LANGUAGENAMES
 
 0409    Polish (Poland)
+0415    Polski (Polska)
+0809    Polish (Poland)
 
 ENDKBD
